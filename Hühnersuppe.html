@@ -7,23 +7,100 @@
     <title>Hühnersuppe</title>
     <link rel="stylesheet" href="Hühnersuppe.css">
     <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 
 <body>
-    <header>
-        <section> 
-            <img src="./03 - Gruppenarbeit - Kochwelt/logo.png" alt="Kochwelt Logo">
-            <nav><a href="#">Start</a>
-                <a href="#">Rezept des Tages</a>
-                <a href="#">Kontakt</a>
-                <a href="#">Impressum</a>
+       <header class="pt20">
+        <div class="container header-row">
+            <img src="./assets/img/logo/logo.png" class="header-logo pb20">
+            <nav class="pb10">
+                <ul>
+                    <li><a href="#">Start</a></li>
+                    <li class="ml20"><a href="#">Rezept des Tages</a></li>
+                    <li class="ml20"><a href="#">Kontakt</a></li>
+                </ul>
             </nav>
-        </section>
+        </div>
     </header>
     <main>
         <section class="Nudeln">
             <h1>Brühnudeln</h1>
-            <img src="./03 - Gruppenarbeit - Kochwelt/img/bruehnudeln.png" alt="Bild von Nudeln">
+            <img src="./assets/img/Nudeln/bruehnudeln.png" alt="Bild von Nudeln">
+            <aside class="icons">
+                <div>
+                <img src="./assets/img/Nudeln/clock-regular.svg" alt="Dauer">
+                <span>90 min.</span>
+                </div>
+                <div>
+                <img src="./assets/img/Nudeln/brain-solid.svg" alt="Schwierigkeitsgrad">
+                <span>simpel</span>
+                </div>
+                <div>
+                <img src="./assets/img/Nudeln/calendar-alt-regular.svg" alt="Kalender">
+                <span>18.08.2025</span>
+                </div>
+            </aside>
+        </section>
+        <section class="pt20 portion">
+            <div>
+                <p>Zutaten für <textarea name="placholder" id="placholder"></textarea></p>
+            </div>
+            <div class="portion">
+                <span>Portionen</span>
+            </div>
+          <section class="Zutaten">
+            <table>
+                <tr>
+                    <td>
+                       1	Suppenhuhn
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1 Bund	Suppengrün
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        große	Zwiebel(n)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2	Möhre(n)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        n. B.	Nudeln 
+                    </td>
+                </tr>
+               
+            </table>
+          </section>
+
+        </section>
+        <section>
+            <h2>Zubereitung</h2>
+            <article class="icons">
+                
+                 <div >
+                <img src="./assets/img/Nudeln/clock-regular.svg" alt="Dauer">
+                <span>ca 90 min.</span>
+                </div>
+                 <div >
+                <img src="./assets/img/Nudeln/clock-regular.svg" alt="Dauer">
+                <span>gesamtzeit 90 min.</span>
+                </div>
+
+                
+            </article>
+            <article class="suppentext">
+                Das Suppenhuhn waschen und in einen großen Topf mit Wasser geben. Das Wasser zum kochen bringen. Auf kleiner Flamme etwa 1 Stunde köcheln lassen. Dann das gewaschene, nicht zu klein geschnittene Suppengrün (Lauchzwiebel, Sellerie, Möhre, Petersilie) und eine Zwiebel dazugeben. Jetzt solange köcheln lassen, bis sich das Fleisch leicht von den Knochen lösen lässt.
+
+Die Suppe durch ein Sieb in einen zweiten Topf kippen, das Fleisch in kleine Stücke schneiden und wieder dazugeben. 1 -2 Möhren schälen, dritteln, aus den Dritteln schmale Streifen schneiden und der Suppe zugeben. Solange köcheln, bis die Möhren bissfest sind. Salzen und pfeffern. Wird die Suppe mit einem Mal gegessen werden, kann man die separat al dente gekochten Nudeln jetzt dazugeben. Könnte etwas übrig bleiben und für später aufgehoben werden, dann erst auf dem Teller die Nudeln der Suppe zugeben. Die Suppe könnte sonst dick werden und die Nudeln werden "schwammig" im Biss.
+            </article>
         </section>
     </main>
 </body>
