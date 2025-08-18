@@ -1,6 +1,16 @@
+/* Auslagern in utility.css */
+
+section {
+  padding: 0 0; /* in utility.css steht 80px */
+}
+
+h3 {
+  padding-top: 16px;
+}
+
 .overview {
-    margin-top: 80px;
-    margin-bottom: 20px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 img {
@@ -8,46 +18,52 @@ img {
   width: 100vh;
   object-fit: cover;
   border-radius: 16px;
-  
 }
 
-.overview ul {
+.overview ul,
+.preparation ul {
   padding-inline-start: 0;
-  
 }
 
-.overview li {
-    background-color:rgba(231, 231, 231, 1);
-    padding: 4px 8px;
-    border-radius: 4px;
+.overview li,
+.preparation li {
+  background-color: rgba(231, 231, 231, 1);
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
-.recipe-metadata {
+.recipe-metadata,
+.preparation-metadata {
   display: flex;
   justify-content: flex-start;
   gap: 40px;
   margin-top: 24px;
 }
 
-.recipe-metadata img {
-    height: 12px;
-    width: 12px;
-    object-fit: contain;
-    padding-right: 8px;
-}
+/* .preparation-metadata {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-top: 24px;
+} */
 
+.recipe-metadata img,
+.preparation-metadata img {
+  height: 12px;
+  width: 12px;
+  object-fit: contain;
+  padding-right: 8px;
+}
 
 ul {
   list-style-type: none;
-  
 }
 
 .seperator {
-    background-color:rgba(231, 231, 231, 1);
-    height: 1px;
-    width: 100vh;
-    margin-top: 40px;
-
+  background-color: rgba(231, 231, 231, 1);
+  height: 1px;
+  width: 100vh;
+  margin-top: 40px;
 }
 input {
   height: 30px;
@@ -55,25 +71,23 @@ input {
 }
 
 button {
-    background-color: rgba(0, 128, 0, 1);
-    color: white;
-    padding: 10px 40px;
-    border-style: none;
-    border-width: 0;
+  background-color: rgba(0, 128, 0, 1);
+  color: white;
+  padding: 10px 40px;
+  border-style: none;
+  border-width: 0;
 }
 
 .ingredients ul {
   padding-inline-start: 0;
-
-  
 }
 
 .ingredients li {
-    padding: 16px 20px;
-    border-radius: 8px;
+  padding: 16px 20px;
+  border-radius: 8px;
 }
 
 .li-grey {
-    background-color: rgba(231, 231, 231, 1);
-    width: 100vh;
+  background-color: rgba(231, 231, 231, 1);
+  width: 100vh;
 }
