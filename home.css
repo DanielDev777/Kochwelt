@@ -51,10 +51,15 @@ h1, h2, h3, p {
     flex: 0 0 33%;
     max-width: 33%;
     display: flex;
+    justify-content: center;
+}
+.recommendations-link {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #000;
+    width: fit-content;
 }
 .recommendations-box img {
     height: 250px;
