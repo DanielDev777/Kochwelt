@@ -5,46 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thai Curry</title>
     <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="thai-curry.css" />
   </head>
   <body>
-    <section>
-      <img src="./03 - Gruppenarbeit - Kochwelt/logo.png" alt="Kochwelt Logo" />
-      <nav>
-        <a href="#">Start</a>
-        <a href="#">Rezept des Tages</a>
-        <a href="#">Kontakt</a>
-        <a href="#">Impressum</a>
-      </nav>
-      test
-      <p>HALLOOOOOOOOO</p>
-    </section>
-    <!-- <header>Hier wird noch ein header eingefügt.</header>
-    <br /><br /><br /> -->
+    <header class="pt20">
+      <div class="container header-row">
+        <img src="./assets/img/logo/logo.png" class="header-logo pb20" />
+        <nav class="pb10">
+          <ul>
+            <li><a href="#">Start</a></li>
+            <li class="ml20"><a href="#">Rezept des Tages</a></li>
+            <li class="ml20"><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <div class="container">
         <section class="overview">
-          Zutaten für
-          <input type="Bitte Zahl der Gerichte eingeben" />
-          <button>Portionen</button>
+          <h2>Thai Curry</h2>
+          <img src="./assets/img/salad.jpg" alt="Fertiges Thai Curry">
 
-          <table>
-            <tr>
-              <td>200 g Basmati Reis</td>
-            </tr>
-            <tr>
-              <td>1 große Zwiebel</td>
-            </tr>
-            <tr>
-              <td>2 EL rote Currypaste</td>
-            </tr>
-          </table>
+          <ul class="recipe-metadata">
+            <li> <img src="./assets/img/clock-regular.svg" alt="Uhr Icon">30 Min.</li>
+            <li><img src="./assets/img/brain-solid.svg" alt="Gehirn Icon">simpel</li>
+            <li><img src="./assets/img/calendar-alt-regular.svg" alt="Datum Icon">18.08.2025</li>
+          </ul>
+
+          <div class="seperator"></div>
+
         </section>
       </div>
 
       <div class="container">
-        <section class="ingredients"></section>
+        <section class="ingredients">
+          Zutaten für
+          <input type="Bitte Zahl der Gerichte eingeben" />
+          <button>Portionen</button>
+
+          <ul>
+            <li class="li-grey">200 g Basmati Reis</li>
+            <li>1 große Zwiebel</li>
+            <li class="li-grey">2 EL Sonnenblumenöl</li>
+            <li>2 EL rote Currypaste</li>
+            <li class="li-grey">1 große Tomate</li>
+            <li>1 Gemüsebrühwürfel</li>
+            <li class="li-grey">100 g geröstete, gesalzene Erdnüsse</li>
+            <li>1 Dose (400 g) Kokosmilch</li>
+            <li class="li-grey">1 TL Koriander</li>
+            <li>1 TL Kurkuma</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="preparation"></section>
       </div>
     </main>
 
