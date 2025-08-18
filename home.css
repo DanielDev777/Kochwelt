@@ -1,0 +1,148 @@
+/**** General ****/
+h1, h2 {
+    font-weight: 600;
+}
+h1 {
+    font-size: 56px;
+}
+h2 {
+    font-size: 40px;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+/**** General ****/
+
+/**** Daily Recepy ****/
+.daily-recepy {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.daily-recepy img {
+    flex: 0 0 45%;
+    max-width: 45%;
+    object-fit: contain;
+}
+.daily-recepy .daily-text {
+    display: flex;
+    flex-direction: column;
+}
+.daily-recepy .daily-text .link-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.daily-recepy .daily-text a {
+    color: #fff;
+    background-color: green;
+    padding: 12px 56px;
+}
+/**** Daily Recepy ****/
+
+/**** Recommendations ****/
+.recommendations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.recommendations-box {
+    flex: 0 0 33%;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+.recommendations-box img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+.recommendations-box p {
+    font-weight: 600;
+}
+/**** Recommendations ****/
+
+/**** Info ****/
+.info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.info p {
+    max-width: calc(100% - 300px);
+}
+.info img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+/**** Info ****/
+
+/**** Queries ****/
+@media (max-width: 991px) {
+    /**** Recepy ****/
+    .daily-recepy {
+        flex-direction: column;
+    }
+    .daily-recepy img {
+        padding-bottom: 20px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .daily-recepy .daily-text p {
+        padding-bottom: 20px;
+    }
+    /**** Recepy ****/
+    
+    /**** Recommendations ****/
+    .recommendations-box {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .recommendations-box:first-of-type {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    /**** Recommendations ****/
+}
+@media (max-width: 575px) {
+    /**** General ****/
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    /**** General ****/
+    
+    /**** Recommendations ****/
+    .recommendations-box {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .recommendations-box:last-of-type {
+        margin-bottom: 0;
+    }
+    /**** Recommendations ****/
+    /**** Info ****/
+    .info {
+        flex-direction: column-reverse;
+    }
+    .info img {
+        width: 100%;
+        margin-left: 0;
+    }
+    .info p {
+        max-width: 100%;
+    }
+    /**** Info ****/
+}
+/**** Queries ****/

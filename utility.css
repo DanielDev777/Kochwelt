@@ -3,14 +3,29 @@ html, body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+a {
+    text-decoration: none;
+}
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
+section {
+    padding: 80px 0;
+}
+.center {
+    text-align: center;
+}
+.radius {
+    border-radius: 12px;
+}
 /**** General ****/
 /**** Spacing ****/
 /**** Padding ****/
+.pb50 {
+    padding-bottom: 50px;
+}
 .pt20 {
     padding-top: 20px;
 }
@@ -28,8 +43,23 @@ html, body {
 }
 /**** Padding ****/
 /**** Margin ****/
+.mta {
+    margin-top: auto;
+} 
+.mr50 {
+    margin-right: 50px;
+}
+.ml50 {
+    margin-left: 50px;
+}
 .ml20 {
     margin-left: 20px;
 }
 /**** Margin ****/
 /**** Spacing ****/
+
+/**** Background ****/
+.bg-grey {
+    background-color: #eee;
+}
+/**** Background ****/
