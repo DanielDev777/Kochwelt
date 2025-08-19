@@ -1,48 +1,121 @@
-
-main{
+main {
     margin-left: 20px;
-    
+
 }
-h1{
-    font-size: 60px;
-    
-}
-.Nudeln{
-    
-    
-}
-.Nudeln img{
-    width: 1440px;
-    height: 300px;
+
+.startImage {
+    width: 100%;
+    max-height: 400px;
     object-fit: cover;
-    border-radius: 40px;
 }
-.icons{
+
+.icons {
     display: flex;
-    
+    gap: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.icons img{
+
+
+.icons img {
     width: 20px;
     height: 20px;
 }
-.icons div{
-    padding-right: 20px;
-    padding-top: 20px;
-    background-color: gray;
-    margin-bottom: 50px;
-}
-.portion{
-    
+
+.icons div {
+
+    padding: 1px;
+    background-color: #e3dede;
+
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
-table{
+button {
+    background-color: rgba(0, 128, 0, 1);
+    color: white;
+    padding: 10px 40px;
+    border-style: none;
+    border-width: 0;
+}
+
+input {
+    height: 30px;
+
+}
+
+div .container .Zutaten {
+    margin-top: 0;
+}
+
+section .Zutaten {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.Zutaten {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table {
     width: 100%;
 }
+
 table td {
     height: 50px;
 }
+.con2{
+    margin-top: 80px;
+}
 
-.suppentext{
-    
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.profil img {
+    height: 20vh;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .suppentext {
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    img {
+        max-width: 100%;
+    }
+
+    .miniIcons {
+        display: none;
+    }
+
+    .icons {
+        justify-content: center;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .profil img {
+        height: 10vh;
+    }
 }

@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hühnersuppe</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo-only.PNG">
     <link rel="stylesheet" href="Hühnersuppe.css">
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
        <header class="pt20">
         <div class="container header-row">
-            <img src="./assets/img/logo/logo.png" class="header-logo pb20">
+            <img src="./assets/img/logo/logo.png" class="header-logo pb20 hide-mobile">
+            <img src="./assets/img/logo/logo_small.png" class="header-logo pb20 show-mobile">
             <nav class="pb10">
                 <ul>
-                    <li><a href="#">Start</a></li>
+                    <li><a href=index.html>Start</a></li>
                     <li class="ml20"><a href="#">Rezept des Tages</a></li>
                     <li class="ml20"><a href="#">Kontakt</a></li>
                 </ul>
@@ -24,31 +28,35 @@
         </div>
     </header>
     <main>
-        <section class="Nudeln">
+        <section >
+            <div class="container">
             <h1>Brühnudeln</h1>
-            <img src="./assets/img/Nudeln/bruehnudeln.png" alt="Bild von Nudeln">
+            <img class="startImage" src="./assets/img/Nudeln/bruehnudeln.png" alt="Bild von Nudeln">
             <aside class="icons">
                 <div>
-                <img src="./assets/img/Nudeln/clock-regular.svg" alt="Dauer">
-                <span>90 min.</span>
+                <img class="miniIcons" src="./assets/img/icons/clock-regular.svg" alt="Dauer">
+                <span>90.min.</span>
                 </div>
                 <div>
-                <img src="./assets/img/Nudeln/brain-solid.svg" alt="Schwierigkeitsgrad">
+                <img class="miniIcons"src="./assets/img/icons/brain-solid.svg" alt="Schwierigkeitsgrad">
                 <span>simpel</span>
                 </div>
                 <div>
-                <img src="./assets/img/Nudeln/calendar-alt-regular.svg" alt="Kalender">
+                <img class="miniIcons"src="./assets/img/icons/calendar-alt-regular.svg" alt="Kalender">
                 <span>18.08.2025</span>
                 </div>
             </aside>
+            </div>
         </section>
-        <section class="pt20 portion">
+        <section class="container Zutaten">
+            <div >
             <div>
-                <p>Zutaten für <textarea name="placholder" id="placholder"></textarea></p>
+                Zutaten für 
+                <input type="Bitte Zahl der Gerichte eingeben" />
+                <button>Portionen</button>
+
             </div>
-            <div class="portion">
-                <span>Portionen</span>
-            </div>
+           
           <section class="Zutaten">
             <table>
                 <tr>
@@ -81,17 +89,19 @@
           </section>
 
         </section>
-        <section>
+    </div>
+        <section class="Zutaten">
+            <div class="container">
             <h2>Zubereitung</h2>
             <article class="icons">
                 
                  <div >
-                <img src="./assets/img/Nudeln/clock-regular.svg" alt="Dauer">
-                <span>ca 90 min.</span>
+                <img class="miniIcons" src="./assets/img/icons/clock-regular.svg" alt="Dauer">
+                <span>ca 90.min.</span>
                 </div>
                  <div >
-                <img src="./assets/img/Nudeln/clock-regular.svg" alt="Dauer">
-                <span>gesamtzeit 90 min.</span>
+                <img class="miniIcons" src="./assets/img/icons/clock-regular.svg" alt="Dauer">
+                <span>gesamtzeit 90.min.</span>
                 </div>
 
                 
@@ -101,8 +111,21 @@
 
 Die Suppe durch ein Sieb in einen zweiten Topf kippen, das Fleisch in kleine Stücke schneiden und wieder dazugeben. 1 -2 Möhren schälen, dritteln, aus den Dritteln schmale Streifen schneiden und der Suppe zugeben. Solange köcheln, bis die Möhren bissfest sind. Salzen und pfeffern. Wird die Suppe mit einem Mal gegessen werden, kann man die separat al dente gekochten Nudeln jetzt dazugeben. Könnte etwas übrig bleiben und für später aufgehoben werden, dann erst auf dem Teller die Nudeln der Suppe zugeben. Die Suppe könnte sonst dick werden und die Nudeln werden "schwammig" im Biss.
             </article>
+            </div>
         </section>
     </main>
+    <section class="container ">
+        <h3>Rezept erstellt von</h3>
+        <div class="profil">
+        <img src="./assets/img/icons/profile.png" alt="Profilbild">
+         Daniel Petrowski
+         </div>
+    </section>
+     <footer class="con2">
+        <div class="container">
+            <img src="./assets/img/logo/logo-white.PNG">
+        </div>
+    </footer>
 </body>
 
 </html>
