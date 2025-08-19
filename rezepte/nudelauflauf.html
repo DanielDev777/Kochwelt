@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nudelauflauf</title>
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo/logo-only.PNG">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo/logo_small.png">
 
     <link rel="stylesheet" href="../css/fontimport.css">
     <link rel="stylesheet" href="../utility.css">
     <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../home.css">
     <link rel="stylesheet" href="../css/nudelauflauf.css">
 </head>
@@ -16,11 +17,13 @@
     <header class="pt20">
         <div class="container header-row">
             <a href="../index.html">
-                <img src="../assets/img/logo/logo.png" class="header-logo pb20">
+                <img src="../assets/img/logo/logo.png" class="header-logo pb20 hide-mobile">
+                <img src="../assets/img/logo/logo_small.png" class="header-logo pb20 show-mobile">
             </a>
             <nav class="pb10">
                 <ul>
-                    <li><a href="#">Rezept des Tages</a></li>
+                    <li><a href="#">Start</a></li>
+                    <li class="ml20"><a href="#">Rezept des Tages</a></li>
                     <li class="ml20"><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
@@ -31,22 +34,113 @@
             <div class="intro">
                 <h1 class="pb50">Nudelauflauf</h1>
                 <img src="../assets/img/nudelauflauf-alla-daniel.webp" class="mb20 radius">
-                <div class="intro-specifications">
-                    <div class="specification">
-                        <img src="../assets/img/icons/clock-regular.svg">
+                <div class="specifications">
+                    <div class="specification radius mr20 mb10">
+                        <img src="../assets/img/icons/clock-regular.svg" class="mr10">
                         <span>45 Min.</span>
                     </div>
-                    <div class="specification">
-                        <img src="../assets/img/icons/brain-solid.svg">
+                    <div class="specification radius mr20 mb10">
+                        <img src="../assets/img/icons/brain-solid.svg" class="mr10">
                         <span>simpel</span>
                     </div>
-                    <div class="specification">
-                        <img src="../assets/img/icons/calendar-alt-regular.svg">
+                    <div class="specification radius mr20 mb10">
+                        <img src="../assets/img/icons/calendar-alt-regular.svg" class="mr10">
                         <span>19.08.2025</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <hr/>
+            <div class="portions">
+                <label for="portions" class="mr10">Zutaten für</label>
+                <input type="number" id="portions" value="4">
+                <a href="#" class="btn-green">Portionen</a>
+            </div>
+            <table class="ingredients pt20 pb50">
+                <tr>
+                    <td class="radius">
+                        500g Nudeln (Fussili oder Penne)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        250g geriebener Käse
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        200g Mais
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        200g Kichererbsen
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        250ml Schlagsahne
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        250g Kochschinken
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        Paprika Pulver
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        Salz & Pfeffer
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        Currypulver
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        Knoblauchpulver
+                    </td>
+                </tr>
+                <tr>
+                    <td class="radius">
+                        3 Tüten Knorr Nudel-Schinken-Gratin
+                    </td>
+                </tr>
+            </table>
+            <h2 class="pb20">Zubereitung</h2>
+            <div class="specifications pb20">
+                <div class="specification radius mr20 mb10">
+                    <img src="../assets/img/icons/clock-regular.svg" class="mr10">
+                    <span>ca. 15 Min.</span>
+                </div>
+                <div class="specification radius mr20 mb10">
+                    <img src="../assets/img/icons/clock-regular.svg" class="mr10">
+                    <span>Gesamtzeit ca. 45 Min.</span>
+                </div>
+            </div>
+            <p class="pb50">
+                Nudeln, Mais und Kichererbsen in die Auflaufform geben. Einen großen Topf mit 1,2l Wasser auf den Herd stellen und das Wasser auf hoher Temperatur erhitzen. Nicht ganz hoch aber oberes Drittel, so 7 von 9 etwa. In dem Topf die Schlagsahne hinzufügen und die Knorrtüten, gefolgt von 3 Teelöffeln Paprikapulver, 2 Teelöffel Currypulver und Knoblauchpulver nach Bedarf, zusätzlich eine gute Prise von Salz und Pfeffer. Während die Soße auf erhitzt (unter sehr regelmäßigem umrühren), den Kochschinken in kleine Stücke schneiden und mit in die Auflaufform tun. Den Inhalt der Auflaufform gut durchmischen. Die Soße muss kochen bis sie anfängt hochzuschäumen, danach auf mittlere Hitze runterstellen und etwas kochen lassen unter ständigem Umrühren. Nach etwa 2-4 Minuten vom Herd nehmen und die Soße über den guten durchgemischten Inhalt der Auflaufform geben. Danach die Form komplett mit dem Streukäse bedecken und in den Backofen. Ohne vorheizen 200°C auf Ober-/Unterhitze für etwa 30-35 Minuten, mit vorheizen ab 15 Minuten immer mal wieder gucken, ob der Käse das gewünschte Aussehen hat.
+            </p>
+            <h3 class="pb20">Rezept erstellt von</h3>
+            <div class="author">
+                <img src="../assets/img/profile.png" class="mr20">
+                <span>Daniel</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <img src="../assets/img/logo/logo-white.PNG">
+        </div>
+    </footer>
 </body>
 </html>

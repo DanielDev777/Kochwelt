@@ -1,5 +1,74 @@
+/**** Intro ****/
 .intro img {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
 }
+.specifications {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.specification {
+    background-color: #eee;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+}
+.specification img {
+    width: 15px;
+    object-fit: contain;
+}
+/**** Intro ****/
+
+/**** Ingredients ****/
+hr {
+    border-top: #eee;
+}
+.portions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.portions input {
+    align-self: stretch;
+    margin-right: -1px;
+    border: 1px solid #eee;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+table {
+    width: 100%;
+}
+table tr td {
+    padding: 20px 40px;
+}
+table tr:nth-of-type(odd) {
+    background-color: #eee;
+}
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.author img {
+    width: 75px;
+    object-fit: contain;
+    border-radius: 100%;
+}
+/**** Ingredients ****/
+
+/**** Queries ****/
+@media (max-width: 575px) {
+    .portions label {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .portions input {
+        width: calc(100% - 130px);
+    }
+}
+/**** Queries ****/
