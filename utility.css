@@ -20,6 +20,7 @@ section {
 .radius {
     border-radius: 12px;
 }
+
 /**** General ****/
 /**** Spacing ****/
 /**** Padding ****/
@@ -52,8 +53,20 @@ section {
 .ml50 {
     margin-left: 50px;
 }
+.mb20 {
+    margin-bottom: 20px;
+}
 .ml20 {
     margin-left: 20px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mb10 {
+    margin-bottom: 10px;
 }
 /**** Margin ****/
 /**** Spacing ****/
@@ -63,3 +76,22 @@ section {
     background-color: #eee;
 }
 /**** Background ****/
+
+/**** Queries ****/
+@media (min-width: 576px) {
+    .show-mobile {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    section {
+        padding: 40px 0;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+}
+/**** Queries ****/
