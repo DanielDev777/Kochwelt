@@ -37,6 +37,7 @@ h1, h2, h3, p {
     color: #fff;
     background-color: green;
     padding: 12px 56px;
+    border: 0;
 }
 /**** Daily Recepy ****/
 

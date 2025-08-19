@@ -20,7 +20,12 @@ section {
 .radius {
     border-radius: 12px;
 }
-
+.impressum {
+    padding: 80px 0;
+}
+.impressum section {
+    padding: 20px 0;
+}
 /**** General ****/
 /**** Spacing ****/
 /**** Padding ****/
