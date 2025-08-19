@@ -4,18 +4,26 @@ section {
   padding: 0 0; /* in utility.css steht 80px */
 }
 
+/* === general specifications === */
+
 h3 {
   padding-top: 16px;
 }
+
+h4 {
+  padding-top: 16px;
+}
+
+/* === Section: overview, ingredients, preparation === */
 
 .overview {
   margin-top: 80px;
   margin-bottom: 20px;
 }
 
-img {
+.overview img {
   height: 200px;
-  width: 100vh;
+  width: 100vw;
   object-fit: cover;
   border-radius: 16px;
 }
@@ -40,13 +48,6 @@ img {
   margin-top: 24px;
 }
 
-/* .preparation-metadata {
-  display: flex;
-  justify-content: flex-start;
-  gap: 40px;
-  margin-top: 24px;
-} */
-
 .recipe-metadata img,
 .preparation-metadata img {
   height: 12px;
@@ -62,12 +63,16 @@ ul {
 .seperator {
   background-color: rgba(231, 231, 231, 1);
   height: 1px;
-  width: 100vh;
+  width: 100vw;
   margin-top: 40px;
 }
+
 input {
   height: 30px;
-  /* border-color: rgba(231, 231, 231, 1); */
+  border-color: rgba(231, 231, 231, 1);
+  margin-left: 8px;
+  margin-right: 0px;
+  padding-left: 8px;
 }
 
 button {
@@ -75,7 +80,16 @@ button {
   color: white;
   padding: 10px 40px;
   border-style: none;
+  cursor: pointer;
   border-width: 0;
+}
+
+button:hover {
+  background-color: rgba(0, 100, 0, 1);
+}
+
+button:active {
+  transform: scale(0.97); /* Button wirkt gedrückt */
 }
 
 .ingredients ul {
@@ -89,5 +103,76 @@ button {
 
 .li-grey {
   background-color: rgba(231, 231, 231, 1);
-  width: 100vh;
+  /* width: 100vw; */
+}
+
+.reference-profil {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.profil-img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 100px;
+}
+
+/* === footer === */
+
+footer {
+  background-color: rgba(64, 59, 59, 1);
+  margin-top: 24px;
+  padding: 0 20px;
+}
+
+.footer-content {
+  height: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kochwelt-logo-white {
+  height: 44px;
+  object-fit: contain;
+}
+
+.impressum-datenschutz {
+  color: white;
+}
+
+.impressum-datenschutz a {
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+/* === Website responsive für TABLET 768-1.280px === */
+
+/* @media (max-width: 1280px) {
+} */
+
+/* === Website responsive für Smartphone 320-767px === */
+
+/* @media (max-width: 767px) {
+} */
+
+@media (max-width: 620px) {
+
+  .recipe-metadata {
+    flex-direction: column;
+    gap: 16px;
+    max-width: 120px;
+  }
 }
