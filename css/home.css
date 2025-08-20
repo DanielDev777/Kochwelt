@@ -22,7 +22,8 @@ h1, h2, h3, p {
 .daily-recepy img {
     flex: 0 0 45%;
     max-width: 45%;
-    object-fit: contain;
+    object-fit: cover;
+    max-height: 300px;
 }
 .daily-recepy .daily-text {
     display: flex;
@@ -38,6 +39,13 @@ h1, h2, h3, p {
     background-color: green;
     padding: 12px 56px;
     border: 0;
+    transition: all .1s ease-in;
+}
+.btn-green:hover {
+    animation: hover 1s ease;
+}
+.btn-green:active {
+    transform: scale(.95);
 }
 /**** Daily Recepy ****/
 
@@ -61,6 +69,10 @@ h1, h2, h3, p {
     align-items: center;
     color: #000;
     width: fit-content;
+    transition: all .5s ease;
+}
+.recommendations-link:hover {
+    transform: scale(1.1);
 }
 .recommendations-box img {
     height: 250px;
