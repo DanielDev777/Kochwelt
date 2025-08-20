@@ -2,6 +2,7 @@
 html, body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -100,3 +101,16 @@ section {
     }
 }
 /**** Queries ****/
+
+/**** Animation ****/
+@keyframes hover {
+    50% {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+    100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+}
+/**** Animation ****/
