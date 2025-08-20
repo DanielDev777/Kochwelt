@@ -5,3 +5,43 @@ footer {
 footer img {
     max-width: 200px;
 }
+footer {
+  background-color: rgba(64, 59, 59, 1);
+  margin-top: 32px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.kochwelt-logo-white {
+  height: 44px;
+  object-fit: contain;
+}
+
+.datenschutz a {
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+@media (max-width: 550px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+

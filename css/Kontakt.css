@@ -1,0 +1,18 @@
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.formsection{
+    height: 100%;
+}
+input,textarea{
+    border: 0;
+}
+form button{
+    align-self: center;
+}
+form h1{
+    font-size: 30px;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,14 @@
     <link rel="stylesheet" href="./css/utility.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/fontimport.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/Kontakt.css">
     
 
 
+
 </head>
+
 <body>
     <header class="pt20">
         <div class="container header-row">
@@ -29,6 +34,58 @@
             </nav>
         </div>
     </header>
-    
+    <section class="formsection">
+        <div class="container">
+            <form class="bg-grey radius pt20 pb20 pr20 pl20">
+                <h1 class="pb50">Kontaktiere uns</h1>
+                <label for="name">
+                    Dein Name:
+                </label>
+                <input class="mb20 pt10 pb10 radius pl10" id="name" type="text">
+
+                <label for="mail">
+                    Deine E-Mail:
+                </label>
+                <input class="mb20 pt10 pb10 radius pl10" id="mail" type="text">
+
+                <label for="message">
+                    Deine Nachricht:
+                </label>
+                <textarea rows="12" class="mb20 radius pt10 pb10 pl10" id="message" type="text"></textarea>
+
+                <button class="btn-green radius">Abschicken</button>
+            </form>
+        </div>
+
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <img
+            class="kochwelt-logo-white"
+            src="../assets/img/logo/logo-white.PNG"
+            alt=""
+          />
+          <div class="datenschutz">
+            <a href="./datenschutz.html" target="_blank">Datenschutz</a>
+          </div>
+
+          <div class="social-media">
+            <a href="https://instagram.com" target="_blank"
+              ><img
+                src="../assets/img/icons/instagram_logo.svg"
+                alt="Instagram"
+            /></a>
+            <a href="https://facebook.com" target="_blank"
+              ><img src="../assets/img/icons/facebook_logo.svg" alt="Facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 </body>
+
 </html>
