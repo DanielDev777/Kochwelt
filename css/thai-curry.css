@@ -101,14 +101,6 @@ button {
   border-width: 0;
 }
 
-button:hover {
-  background-color: rgba(0, 100, 0, 1);
-}
-
-button:active {
-  transform: scale(0.97); /* Button wirkt gedrückt */
-}
-
 .ingredients ul {
   padding-inline-start: 0;
 }

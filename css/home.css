@@ -1,18 +1,3 @@
-/**** General ****/
-h1, h2 {
-    font-weight: 600;
-}
-h1 {
-    font-size: 56px;
-}
-h2 {
-    font-size: 40px;
-}
-h1, h2, h3, p {
-    margin: 0;
-}
-/**** General ****/
-
 /**** Daily Recepy ****/
 .daily-recepy {
     display: flex;
@@ -33,19 +18,6 @@ h1, h2, h3, p {
     height: 100%;
     display: flex;
     align-items: center;
-}
-.btn-green {
-    color: #fff;
-    background-color: green;
-    padding: 12px 56px;
-    border: 0;
-    transition: all .1s ease-in;
-}
-.btn-green:hover {
-    animation: hover 1s ease;
-}
-.btn-green:active {
-    transform: scale(.95);
 }
 /**** Daily Recepy ****/
 
