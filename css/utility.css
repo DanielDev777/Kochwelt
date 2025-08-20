@@ -4,6 +4,18 @@ html, body {
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 }
+h1, h2 {
+    font-weight: 600;
+}
+h1 {
+    font-size: 56px;
+}
+h2 {
+    font-size: 40px;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
 a {
     text-decoration: none;
 }
@@ -26,6 +38,20 @@ section {
 }
 .impressum section {
     padding: 20px 0;
+}
+.btn-green {
+    color: #fff;
+    background-color: green;
+    padding: 12px 56px;
+    border: 0;
+    transition: all .1s ease-in;
+}
+.btn-green:hover {
+    animation: hover 1s ease;
+    cursor: pointer;
+}
+.btn-green:active {
+    transform: scale(.95);
 }
 /**** General ****/
 /**** Spacing ****/
