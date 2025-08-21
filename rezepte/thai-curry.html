@@ -4,111 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thai Curry</title>
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo/logo_small.png">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/img/logo/logo_small.png"
+    />
+
+    <link rel="stylesheet" href="../css/fontimport.css" />
     <link rel="stylesheet" href="../css/utility.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/thai-curry.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/nudelauflauf.css" />
   </head>
   <body>
     <header class="pt20">
-        <div class="container header-row">
-            <a href="../index.html">
-                <img src="../assets/img/logo/logo.png" class="header-logo pb20 hide-mobile">
-                <img src="../assets/img/logo/logo_small.png" class="header-logo pb20 show-mobile">
-            </a>
-            <nav class="pb10">
-                <ul>
-                    <li><a href="../index.html">Start</a></li>
-                    <li class="ml20"><a href="../index.html#daily-recepy">Rezept des Tages</a></li>
-                    <li class="ml20"><a href="../Kontakt.html">Kontakt</a></li>
-                    <li class="ml20"><a href="../impressum.html">Impressum</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container header-row">
+        <a href="../index.html">
+          <img
+            src="../assets/img/logo/logo.png"
+            class="header-logo pb20 hide-mobile"
+          />
+          <img
+            src="../assets/img/logo/logo_small.png"
+            class="header-logo pb20 show-mobile"
+          />
+        </a>
+        <nav class="pb10">
+          <ul>
+            <li><a href="../index.html">Start</a></li>
+            <li class="ml20">
+              <a href="../index.html#daily-recepy">Rezept des Tages</a>
+            </li>
+            <li class="ml20"><a href="../Kontakt.html">Kontakt</a></li>
+            <li class="ml20"><a href="../impressum.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-    <main>
+    <section>
       <div class="container">
-        <section class="overview">
-          <h1>Thai Curry</h1>
-          <img src="../assets/img/Thai Curry.png" alt="Fertiges Thai Curry" />
-
-          <div class="recipe-metadata">
-            <span class="tag">
-              <img
-                src="../assets/img/icons/clock-regular.svg"
-                alt="Zeit Icon"
-              />
-              30 Min.
-            </span>
-            <span class="tag">
-              <img src="../assets/img/icons/brain-solid.svg" alt="Gehirn Icon" />
-              simpel
-            </span>
-            <span class="tag">
-              <img src="../assets/img/icons/Veggie-icon.png" alt="Vegan Icon" />
-              vegan
-            </span>
-            <span class="tag">
+        <div class="intro">
+          <h1 class="pb50">Thai Curry</h1>
+          <img src="../assets/img/Thai Curry.png" class="mb20 radius" />
+          <div class="specifications">
+            <div class="specification radius mr20 mb10">
+              <img src="../assets/img/icons/clock-regular.svg" class="mr10" />
+              <span>45 Min.</span>
+            </div>
+            <div class="specification radius mr20 mb10">
+              <img src="../assets/img/icons/brain-solid.svg" class="mr10" />
+              <span>simpel</span>
+            </div>
+            <div class="specification radius mr20 mb10">
+              <img src="../assets/img/icons/Veggie-icon.png" class="mr10" />
+              <span>vegan</span>
+            </div>
+            <div class="specification radius mr20 mb10">
               <img
                 src="../assets/img/icons/calendar-alt-regular.svg"
-                alt="Kalender Icon"
+                class="mr10"
               />
-              18.08.2025
-            </span>
+              <span>18.08.2025</span>
+            </div>
           </div>
-
-          <div class="seperator"></div>
-        </section>
+        </div>
       </div>
-
+    </section>
+    <section>
       <div class="container">
-        <section class="ingredients">
-          <label for="portions">Zutaten für</label>
-          <input id="portions" type="number" min=1 value="4" />
-
+        <hr />
+        <div class="portions">
+          <label for="portions" class="mr10">Zutaten für</label>
+          <input type="number" id="portions" value="4" min="1" />
           <button class="btn-green">Portionen</button>
-
-          <ul>
-            <li class="li-grey">4 Möhren</li>
-            <li>2 Paprika</li>
-            <li class="li-grey">2 Zucchini</li>
-            <li>1 große Zwiebel</li>
-            <li class="li-grey">2 EL rote Currypaste</li>
-            <li>1 große Tomate</li>
-            <li class="li-grey">1 Gemüsebrühwürfel</li>
-            <li>100 g geröstete, gesalzene Erdnüsse</li>
-            <li class="li-grey">1 Dose (400 g) Kokosmilch</li>
-            <li>1 TL Koriander</li>
-            <li class="li-grey">1 TL Kurkuma</li>
-            <li>320 g Basmati Reis</li>
-            <li class="li-grey">Öl, Salz, Pfeffer</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="container">
-        <section class="preparation">
-          <h2>Zubereitung</h2>
-
-          <div class="preparation-metadata">
-            <span class="tag">
-              <img
-                src="../assets/img/icons/clock-regular.svg"
-                alt="Zeit Icon"
-              />
-              Kochzeit ca. 30 Min.
-            </span>
-            <span class="tag">
-              <img
-                src="../assets/img/icons/clock-regular.svg"
-                alt="Zeit Icon"
-              />
-              Gesamtzeit ca. 45 Min.
-            </span>
+        </div>
+        <table class="ingredients pt20 pb50">
+          <tr>
+            <td class="radius">4 Möhren</td>
+          </tr>
+          <tr>
+            <td class="radius">2 Paprika</td>
+          </tr>
+          <tr>
+            <td class="radius">1 große Zwiebel</td>
+          </tr>
+          <tr>
+            <td class="radius">2 EL rote Currypaste</td>
+          </tr>
+          <tr>
+            <td class="radius">1 große Tomate</td>
+          </tr>
+          <tr>
+            <td class="radius">1 Gemüsebrühwürfel</td>
+          </tr>
+          <tr>
+            <td class="radius">100 g geröstete, gesalzene Erdnüsse</td>
+          </tr>
+          <tr>
+            <td class="radius">1 Dose (400 ml) Kokosmilch</td>
+          </tr>
+          <tr>
+            <td class="radius">1 TL Koriander</td>
+          </tr>
+          <tr>
+            <td class="radius">1 TL Kurkuma</td>
+          </tr>
+          <tr>
+            <td class="radius">320 g Basmati Reis</td>
+          </tr>
+          <tr>
+            <td class="radius">Öl, Salz, Pfeffer</td>
+          </tr>
+        </table>
+        <h2 class="pb20">Zubereitung</h2>
+        <div class="specifications pb20">
+          <div class="specification radius mr20 mb10">
+            <img src="../assets/img/icons/clock-regular.svg" class="mr10" />
+            <span>ca. 30 Min.</span>
           </div>
-
-          <p>
+          <div class="specification radius mr20 mb10">
+            <img src="../assets/img/icons/clock-regular.svg" class="mr10" />
+            <span>Gesamtzeit ca. 45 Min.</span>
+          </div>
+        </div>
+        <p class="pb50">
             Gemüse vorbereiten und anbraten: Möhren schälen und in Scheiben
             schneiden. Paprika und Zucchini waschen, entkernen bzw. putzen und
             würfeln. Das vorbereitete Gemüse in einer Pfanne oder einem Wok mit
@@ -131,25 +151,14 @@
             Erdnüssen toppen. Wer es gerne frischer mag, kann das Curry zum
             Schluss noch mit etwas Limettensaft oder frischem Koriandergrün
             verfeinern.
-          </p>
-        </section>
+        </p>
+        <h3 class="pb20">Rezept erstellt von</h3>
+        <div class="author">
+          <img src="../assets/img/Dani Comic.png" class="mr20" />
+          <span>Dani Schomaker</span>
+        </div>
       </div>
-
-      <div class="container">
-        <section class="reference">
-          <h3>Rezept erstellt von</h3>
-          <div class="reference-profil">
-            <img
-              class="profil-img"
-              src="../assets/img/Dani Comic.png"
-              alt="Cartoonbild Dani S."
-            />
-            <p>Dani S.</p>
-          </div>
-        </section>
-      </div>
-    </main>
-
+    </section>
     <footer>
       <div class="container">
         <div class="footer-content">
@@ -170,9 +179,9 @@
           </div>
         </div>
         <div class="footer-bottom">
-            <div class="datenschutz center">
-                <a href="../datenschutz.html" target="_blank">Datenschutz</a>
-            </div>
+          <div class="datenschutz center">
+            <a href="../datenschutz.html" target="_blank">Datenschutz</a>
+          </div>
         </div>
       </div>
     </footer>
