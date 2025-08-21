@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
+    height: 100%;
 }
 h1, h2 {
     font-weight: 600;
@@ -28,7 +29,7 @@ section {
     padding: 80px 0;
 }
 section.section-recepy {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 .center {
     text-align: center;
@@ -38,6 +39,7 @@ section.section-recepy {
 }
 .impressum {
     padding: 80px 0;
+    height: 100%;
 }
 .impressum section {
     padding: 20px 0;
