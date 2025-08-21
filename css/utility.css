@@ -42,6 +42,9 @@ section.section-recepy {
 .impressum section {
     padding: 20px 0;
 }
+.privacy a {
+    word-break: break-all;
+}
 .btn-green {
     color: #fff;
     background-color: green;
