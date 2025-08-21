@@ -3,7 +3,6 @@ html, body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
-    height: 100%;
 }
 h1, h2 {
     font-weight: 600;
@@ -140,6 +139,11 @@ dialog.open {
 /**** Dialog ****/
 
 /**** Queries ****/
+@media (max-width: 2500px) {
+    html, body {
+        height: 100%;
+    }
+}
 @media (min-width: 768px) {
     .show-mobile {
         display: none;
