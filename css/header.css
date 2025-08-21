@@ -8,6 +8,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+header nav {
+    align-self: flex-end;
+}
 header img {
     max-width: 200px;
     object-fit: contain;
