@@ -28,7 +28,7 @@
             <nav class="pb10 hide-mobile">
                 <ul>
                     <li><a href="./index.html">Start</a></li>
-                    <li class="ml20"><a href="#daily-recepy">Rezept des Tages</a></li>
+                    <li class="ml20"><a href=../index.html#daily-recepy>Rezept des Tages</a></li>
                     <li class="ml20"><a href="./Kontakt.html">Kontakt</a></li>
                     <li class="ml20"><a href="./impressum.html">Impressum</a></li>
                 </ul>
@@ -45,24 +45,24 @@
     </header>
     <section class="formsection">
         <div class="container">
-            <form class="bg-grey radius pt20 pb20 pr20 pl20">
+            <form onsubmit="sendMail(event)" class="bg-grey radius pt20 pb20 pr20 pl20">
                 <h1 class="pb50">Kontaktiere uns</h1>
                 <label for="name">
                     Dein Name:
                 </label>
-                <input class="mb20 pt10 pb10 radius pl10" id="name" type="text" required>
+                <input name="name" class="mb20 pt10 pb10 radius pl10" id="name" type="text" required>
 
                 <label for="mail">
                     Deine E-Mail:
                 </label>
-                <input class="mb20 pt10 pb10 radius pl10" id="mail" type="text" required>
+                <input type="email" name="email" class="mb20 pt10 pb10 radius pl10" required>
 
                 <label for="message">
                     Deine Nachricht:
                 </label>
-                <textarea rows="12" class="mb20 radius pt10 pb10 pl10" id="message" type="text" required></textarea>
+                <textarea name="message" rows="12" class="mb20 radius pt10 pb10 pl10" required></textarea>
 
-                <button class="btn-green radius">Abschicken</button>
+                <button type="submit" class="btn-green radius">Abschicken</button>
             </form>
         </div>
 
