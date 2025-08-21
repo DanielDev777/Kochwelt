@@ -56,6 +56,9 @@ section {
 /**** General ****/
 /**** Spacing ****/
 /**** Padding ****/
+.pt50 {
+    padding-top: 50px;
+}
 .pb50 {
     padding-bottom: 50px;
 }
