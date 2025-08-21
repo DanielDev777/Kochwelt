@@ -124,6 +124,19 @@ section.section-recepy {
 }
 /**** Background ****/
 
+/**** Dialog ****/
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, .7);
+}
+dialog.open {
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/**** Dialog ****/
+
 /**** Queries ****/
 @media (min-width: 768px) {
     .show-mobile {

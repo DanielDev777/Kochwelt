@@ -1,5 +1,6 @@
 let mobileMenu = document.getElementById('mobile-menu');
 let menuBtn = document.getElementById('menu-btn');
+let successDialog = document.getElementById('successDialog');
 
 function openMenu() {
     mobileMenu.classList.remove('closed');
@@ -24,8 +25,14 @@ function sendMail(event){﻿
             'Accept': 'application/json'
         }
     }).then(() => {
-        window.location.href = "./kontakt send.html";
+        successDialog.showModal();
+        successDialog.classList.toggle('open');
     }).catch((error) => {
         console.log(error);
     });
+}
+
+function closeDialog() {
+    successDialog.close();
+    successDialog.classList.toggle('open');
 }
